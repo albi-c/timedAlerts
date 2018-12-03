@@ -9,6 +9,11 @@ echo "Copying $BASEDIR/check_alerts_loop.py to $HOME/bin/check_alerts_loop"
 cp $BASEDIR/check_alerts_loop.py $HOME/bin/check_alerts_loop
 chmod 755 $HOME/bin/check_alerts_loop
 
+echo "Copying $BASEDIR/add_timed_alert.py to $HOME/bin/add_timed_alert"
+
+cp $BASEDIR/add_timed_alert.py $HOME/bin/add_timed_alert
+chmod 755 $HOME/bin/add_timed_alert
+
 if grep -Fxq "check_alerts_loop" $HOME/.bash_profile; then
 	echo "check_alerts_loop already in $HOME/.bash_profile"
 else
@@ -19,4 +24,3 @@ else
 fi
 
 echo "Installed!"
-
