@@ -7,7 +7,7 @@ How to use?
 
 At first, run install_linux.sh to install on Linux.
 
-Installing for Windows and MacOS will be supported soon.
+Installers for Windows and MacOS will be avaible soon.
 
 This will add set_timed_alert to bin and also setup loop that checks if alert should be made or not (starts on login).
 
