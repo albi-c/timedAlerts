@@ -1,24 +1,11 @@
 #!/usr/bin/python3
 
-import tkinter
-from tkinter import messagebox as msg
 import time
 import json
 import traceback
 import os
 import sys
 from datetime import datetime
-
-root = tkinter.Tk()
-root.withdraw()
-
-class alert:
-    def info(title, message):
-        msg.showinfo(title, message)
-    def warning(title, message):
-        msg.showwarning(title, message)
-    def error(title, message):
-        msg.showerror(title, message)
 
 def load_config(fn):
     try:
@@ -52,7 +39,7 @@ def parse_arguments(argvs):
 
 def parse_time(t):
     try:
-        return time.mktime(datetime.strptime(t, "%d/%m/%Y %H:%M:%S").timetuple())
+        return time.mktime(datetime.strptime(t, "%d/%m/%Y-%H:%M:%S").timetuple())
     except ValueError:
         print("Invalid time format \"{}\"".format(t))
         sys.exit(1)
@@ -80,7 +67,7 @@ if (__file__ in argv and len(argv) == 1) or len(argv) == 0 or "-h" in argv or "-
     print("usage: set_timed_alert [-h] [--help] [--time=time_to_set_alert] [--type=info|warning|error] [--title=alert_title] [--msg=alert_message]")
     print("\nOptional arguents:")
     print("\t-h --help Print this message and exit")
-    print("\t--time Time to set alert (day/month/year hour:minute:second) (example: 20/8/2018 17:41:53)")
+    print("\t--time Time to set alert (day/month/year-hour:minute:second) (example: 20/8/2018 17:41:53)")
     print("\t--type Alert type [info|warning|error]")
     print("\t--title Alert title")
     print("\t--msg Alert message")
