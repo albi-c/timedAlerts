@@ -14,13 +14,14 @@ echo "Copying $BASEDIR/set_timed_alert.py to $HOME/bin/set_timed_alert"
 cp $BASEDIR/set_timed_alert.py $HOME/bin/set_timed_alert
 chmod 755 $HOME/bin/set_timed_alert
 
-if grep -Fxq "check_alerts_loop" $HOME/.bash_profile; then
-	echo "check_alerts_loop already in $HOME/.bash_profile"
-else
-	echo "Adding check_alerts_loop to $HOME/.bash_profile"
-	
-	cp $HOME/.bash_profile $HOME/.bash_profile_backup
-	echo "check_alerts_loop&" >> $HOME/.bash_profile
-fi
+echo "Copying $BASEDIR/talerts_linux.sh to $HOME/bin/talerts"
+
+cp $BASEDIR/talerts_linux.sh $HOME/bin/talerts
+chmod 755 $HOME/bin/talerts
 
 echo "Installed!"
+echo ""
+echo "Usage:"
+echo "    talerts loop|add options"
+echo ""
+echo 'write into "terminal talerts loop &" to start alerts loop on login'
