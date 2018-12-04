@@ -3,7 +3,7 @@
 What is it?
 ---
 
-Have you ever noticed that you had to do something and forgot because of watching video or programming?
+Did you ever get to do something and forget about it because of watching video or programming?
 
 timedAlerts solve this problem.
 
