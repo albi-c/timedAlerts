@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ $# -eq 0 ]; then
-    echo "Too few arguments!"
+    echo "usage: talerts [loop|add] [options]"
     exit
 fi
 
@@ -14,4 +14,3 @@ else
         exit
     fi
 fi
-
