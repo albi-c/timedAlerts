@@ -24,4 +24,4 @@ echo ""
 echo "Usage:"
 echo "    talerts loop|add options"
 echo ""
-echo 'write into "terminal talerts loop &" to start alerts loop on login'
+echo 'write into "terminal talerts loop &" to start alerts checking loop'
