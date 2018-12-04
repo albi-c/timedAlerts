@@ -9,6 +9,8 @@ At first, run install_linux.sh to install on Linux.
 
 Installers for Windows and MacOS will be avaible soon.
 
-This will add set_timed_alert to bin and also setup loop that checks if alert should be made or not (starts on login).
+This will add talerts command.
 
-Then, write set_timed_alert to your terminal to get help message.
+Then, "talerts set --time=day:month:year-hour:minute:second" to your terminal to set alert to specified time.
+
+If you want to start alert checking loop, write "talerts loop" to your terminal.
