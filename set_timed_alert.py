@@ -25,7 +25,7 @@ def save_config(fn, cfg):
         return False
 
 def parse_arguments(argvs):
-    out = {"time": time.time() + 1, "type": "info", "title": "MessageBox", "msg": "Message"}
+    out = {"time": "1/1/1970-0:0:0", "type": "info", "title": "MessageBox", "msg": "Message"}
     for arg in argvs:
         if arg.startswith("--time="):
             out["time"] = arg.split("=", 1)[1]
