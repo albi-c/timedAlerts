@@ -81,4 +81,8 @@ def check_timers():
 
 while True:
     check_timers()
-    time.sleep(1)
+    try:
+        time.sleep(1)
+    except:
+        print()
+        break
