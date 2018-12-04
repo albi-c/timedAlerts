@@ -1,5 +1,14 @@
 # timedAlerts
 
+What is it?
+---
+
+Have you ever noticed that you had to do something and forgot because of watching video or programming?
+
+timedAlerts solve this problem.
+
+You just run install script, add a timed alert and then start alert checking loop that checks if it should make an alert.
+
 How to use?
 ---
 
