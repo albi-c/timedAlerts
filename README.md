@@ -20,6 +20,6 @@ Installers for Windows and MacOS will be avaible soon.
 
 This will add talerts command.
 
-Then, write "talerts set --time=day:month:year-hour:minute:second --type=info|warning|error --title=title --msg=message" into your terminal to set alert to specified time.
+Then, write `talerts set --time=day:month:year-hour:minute:second --type=info|warning|error --title=title --msg=message` into your terminal to set alert to specified time.
 
-If you want to start alert checking loop, write "talerts loop" to your terminal.
+If you want to start alert checking loop, write `talerts loop` to your terminal.
